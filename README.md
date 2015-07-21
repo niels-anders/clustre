@@ -1,12 +1,13 @@
 # CLustre
 CLustre: semi-automated lineament clustering for palaeo-glacial reconstruction
+-------------
 
 This script accompanies the paper of Smith et al. (In Press) in ESPL. Here we present a semi-automated algorithm, CLustre, for lineament clustering that uses a locally adaptive, region growing, methodology. CLustre is demonstrated with a polyline data set (ESRI shapefile) representing glacial landforms for palaeo-glacial reconstruction
--------------
+
 Input: shapefile
 Output: edited shapefile with new attribute fields and values
-
 Usage: run Clustre.py with arguments from bash/terminal 
+
 -------------
 Arguments:
 * lines='location/to/shapefile.shp'
@@ -16,12 +17,9 @@ Arguments:
 * label=classification label
 * seed_ID=FID of initial seed lineament
 * plotYN='yes' or 'no' to plot results in preview.png
-
 example:
 in linux:   python Clustre.py lines=\'example_data/example.shp\' th_distance=5000 th_orient=5 th_length=5000 label=1 seed_ID=2511 plotYN=\'yes\'
 in windows: python Clustre.py lines='example_data/example.shp' th_distance=5000 th_orient=5 th_length=5000 label=1 seed_ID=2511 plotYN='yes'
-
-
 -------------
 dependencies (and tested version numbers in brackets): 
 * python 2.7        (2.7.9)
