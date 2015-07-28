@@ -1,17 +1,11 @@
 # CLustre: semi-automated lineament clustering for palaeo-glacial reconstruction
 -------------
 
-<<<<<<< HEAD
 This script accompanies the paper of Smith et al. (In Press) in ESPL. Here we present a semi-automated algorithm, CLustre, for lineament clustering that uses a locally adaptive, region growing, methodology. CLustre is demonstrated with a polyline data set (ESRI shapefile) representing glacial landforms for palaeo-glacial reconstruction. 
 
-If the accompanied example data is used please cite: 
+NOTE: This script is accompanied by example data from Stokes et al. 2003. When used please cite: 
 Stokes, C.R. & Clark, C.D. (2003). The Dubawnt Lake palaeo-ice stream: evidence for dynamic ice sheet behaviour on the Canadian Shield and insights regarding the controls on ice-stream location and vigour. Boreas 32: 263-279. doi: 10.1111/j.1502-3885.2003.tb01442.x
 
--------------
-=======
-This script accompanies the paper of Smith et al. (In Press) in ESPL. Here we present a semi-automated algorithm, CLustre, for lineament clustering that uses a locally adaptive, region growing, methodology. CLustre is demonstrated with a polyline data set (ESRI shapefile) representing glacial landforms for palaeo-glacial reconstruction
-
->>>>>>> a9c07863b69bfd77f32f1f504233bf045c1b3f6c
 Input: shapefile
 Output: edited shapefile with new attribute fields and values
 Usage: run Clustre.py with arguments from bash/terminal 
@@ -28,8 +22,9 @@ Arguments:
 
 example:
 
-in linux: python Clustre.py lines=\'example_data/example.shp\' th_distance=5000 th_orient=5 th_length=5000 label=1 seed_ID=2511 plotYN=\'yes\'
-in windows: python Clustre.py lines='example_data/example.shp' th_distance=5000 th_orient=5 th_length=5000 label=1 seed_ID=2511 plotYN='yes'
+in linux: python Clustre.py lines=\'example/dubawnt.shp\' th_distance=10000 th_orient=2 th_length=3000 label=1 seed_ID=5175 plotYN=\'yes\'
+in windows: python Clustre.py lines='example/dubawnt.shp' th_distance=10000 th_orient=2 th_length=3000 label=1 seed_ID=5715 plotYN='yes'
+
 -------------
 dependencies (and tested version numbers in brackets): 
 * python 2.7        (2.7.9)
