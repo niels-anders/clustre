@@ -283,7 +283,17 @@ if __name__=='__main__':
     
     total   = len(sys.argv)
 
-    if total != 8:      
+    if total == 1:
+        # use example
+        lines='example/dubawnt.shp'
+        th_distance     = 10 * 10**3  # in meters
+        th_length       =  3 * 10**3
+        th_orient       =  2
+        label           =  1
+        seed_ID         =  5175
+        plotYN          =  'yes'
+        
+    elif total != 8:      
       print "Invalid number of arguments"
       print "Define:\n lines=[location/to/shapefile.shp]\n th_distance=[distance threshold]\n th_orient=[threshold orientation]\n th_length=[threshold length]\n label=[classification]\n seed_ID=[initial seed FID]\n plotYN=['yes' or 'no' to (not) plot results]"
       sys.exit()
@@ -323,4 +333,3 @@ if __name__=='__main__':
     
     
     print 'Finished' 
-    sys.exit(1)
