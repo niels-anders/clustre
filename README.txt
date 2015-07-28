@@ -3,7 +3,7 @@
 
 This script accompanies the paper of Smith et al. (In Press) in ESPL. Here we present a semi-automated algorithm, CLustre, for lineament clustering that uses a locally adaptive, region growing, methodology. CLustre is demonstrated with a polyline data set (ESRI shapefile) representing glacial landforms for palaeo-glacial reconstruction. 
 
-NOTE: This script is accompanied by example data from Stokes et al. 2003. When used please cite: 
+NOTE: This script is accompanied by example data from Stokes & Clark, 2003. When used please cite: 
 Stokes, C.R. & Clark, C.D. (2003). The Dubawnt Lake palaeo-ice stream: evidence for dynamic ice sheet behaviour on the Canadian Shield and insights regarding the controls on ice-stream location and vigour. Boreas 32: 263-279. doi: 10.1111/j.1502-3885.2003.tb01442.x
 
 Input: shapefile
